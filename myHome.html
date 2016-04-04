@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title>My Homepage</title>
+  </head>
+  <body>
+    <iframe src="http://tunein.com/embed/player/s34804/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+    <iframe src="http://tunein.com/embed/player/s32163/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+    <iframe src="http://tunein.com/embed/player/s24948/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+    <iframe src="http://tunein.com/embed/player/s32282/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+    <iframe src="http://tunein.com/embed/player/s32104/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+    <audio controls>
+      <source src="http://13443.mc.tritondigital.com/NPR_500005/media-session/9f02e7a7-04a2-46a6-bb94-f8d96c4925dc/anon.npr-mp3/npr/newscasts/2016/03/29/newscast124537.mp3?orgId=1&d=300&p=500005&story=472273406&t=podcast&e=472273406&ft=pod&f=500005" type="audio/mpeg">
+                   http://play.podtrac.com/npr-500005/npr.mc.tritondigital.com/NPR_500005/media/anon.npr-mp3/npr/newscasts/2016/03/29/newscast130631.mp3?orgId=1&d=300&p=500005&story=472281323&t=podcast&e=472281323&ft=pod&f=500005
+    </audio>
+  </body>
+  <script type="text/javascript">
+    $.get("http://www.npr.org/rss/podcast.php?id=500005Five").done(function (data) {
+        console.log(data);
+    });
+  </script>
+</html>
+<!-- NOTE: useful API URLs -->
+<!-- http://api.openweathermap.org/data/2.5/weather?zip=94702,us&appid=ba1175f5cfcb9b0d6e62171d6ea5feb6&units=imperial -->
+<!-- http://www.npr.org/rss/podcast.php?id=500005Five -->
