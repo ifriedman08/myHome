@@ -17,9 +17,16 @@
     </audio>
   </body>
   <script type="text/javascript">
-    $.get("http://www.npr.org/rss/podcast.php?id=500005Five").done(function (data) {
+    $.get({
+      "url":"http://www.npr.org/rss/podcast.php?id=500005Five",
+      beforeSend: function (request)
+      {
+        request.setRequestHeader("Access-Control-Allow-Origin", "ivanfriedman.co");
+      }
+    }).done(function (data) {
         console.log(data);
     });
+
   </script>
 </html>
 <!-- NOTE: useful API URLs -->
